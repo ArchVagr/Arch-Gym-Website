@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+*{
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0f0f0f;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  height: 60px;
+  background: #0f0f0f;
+  gap: 24px;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: greenyellow;
+}
+
+header h1 {
+  margin-right: auto;
+  color: aliceblue;
+
+}
+
+.title_text{
+    color: greenyellow;
+    margin: 1px;
+}
+
+.upper_icon{
+    background-color: rgba(173, 255, 47, 0.6);
+    width: 130px;
+    margin: 64px 32px 0 32px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 16px rgba(173, 255, 47, 0.6);
+}
+
+.upper_icon_text{
+    color: greenyellow;
+}
+
+.upper_main{
+    max-width: 500px;
+    padding: 52px 2px 2px 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper_main_text{
+    align-self: center;
+    font-size: 120px;
+    color: white;
+}
+
+.upper_main_sub{
+    color: greenyellow;
+    text-shadow: 2px 4px 16px rgba(173, 255, 47, 0.6);
+}
+
+.upper_main_description{
+    align-self: left;
+    color: gray;
+}
+
+.upper_search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 0 16px;
+    height: 48px;
+    margin: 24px 32px 0 32px;
+}
+
+.search_line {
+    flex: 1; /* растягивает инпут на всё свободное место */
+
+}
+
+.search_line input {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+}
+
+.search_line input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+button {
+    background: greenyellow;
+    color: #0f0f0f;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 16px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.upper_facts{
+    padding: 16px 16px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.fact{
+    display: flex;
+    padding: 16px 16px;
+    align-items: center;
+    flex-direction: column;
+    max-width: 120px;
+    background-color: gray;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: greenyellow;
+    box-shadow:2px 4px 16px rgba(173, 255, 47, 0.6); ;
+    width: 300px;
+}
+
+.sub_fact{
+    width: 100px;
+    font-size: 12px;
+     align-self: flex-start;
+}
+
+.fact_text{
+    font-weight: 400;
+    font-size: 32px;
+    align-self: flex-start;
+    color: greenyellow;
+}
+
+.middle_home{
+    background-color: gray;
+    max-width: 1611px;
+    max-height: 500px;
+}
+
