@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+*{
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+body{
+    background-color: black;
+}
+
+
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+  height: 60px;
+  background: #0f0f0f;
+  gap: 24px;
+  border-bottom: 1px solid greenyellow;
+  box-shadow: 2px 4px 16px rgba(173, 255, 47, 0.6);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: greenyellow;
+}
+
+header h1 {
+  margin-right: auto;
+  color: aliceblue;
+
+}
+
+.title_text{
+    color: greenyellow;
+    margin: 1px;
+}
+
+
+/*  ================
+    FOOTER PART
+    ================ */
+footer{
+    background-color: #30302E80 ;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer_title{
+    margin: 32px 100px;
+}
+
+.footer_title_main{
+    color: white;
+    font-size: 64px;
+}
+
+.footer_description{
+    color: rgba(255, 255, 255, 0.3);;
+    font-size: 32px;
+}
+
+.footer_form {
+    display: flex;
+    gap: 12px;
+    margin: 0 100px 32px;
+    flex-direction: column;
+}
+
+.footer_form input {
+    flex: 1;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1c1c1c;
+    color: white;
+    outline: none;
+}
+
+.footer_text{
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+.footer_form input::placeholder {
+    color: rgba(255,255,255,0.3);
+}
+
+label{
+    color: white;
+}
+
+.plan-picker {
+    display: flex;
+    gap: 10px;
+}
+
+.plan-opt {
+    flex: 1;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 14px;
+    text-align: center;
+    cursor: pointer;
+    background: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.plan-opt input {
+    display: none; 
+}
+
+
+.plan-opt:has(input:checked) {
+    border-color: greenyellow;
+    background: rgba(173, 255, 47, 0.08);
+}
+
+.p-name {
+    color: white;
+    font-weight: 500;
+}
+
+.p-price {
+    color: rgba(255,255,255,0.4);
+    font-size: 12px;
+}
+
+.footer_button{
+    margin: 0 auto;
+    max-width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.footer_button:hover{
+    transform:scale(1.05);
+    box-shadow: 2px 4px 16px rgba(173, 255, 47, 0.6);;
+}

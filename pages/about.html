@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Oganes Gym</title>
+    <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" href="../styles/base.css">
+</head>
+<body>
+    <header>
+        <h1><span class="title_text">ARCH</span>GYM</h1>
+        <a href="../pages/home.html" class="navigation_menu">Home</a>
+        <a href="../pages/about.html" class="navigation_menu">About</a>
+        <a href="#" class="navigation_menu">Contact us</a>
+    </header>
+
+    <div class="about_icon">
+            <p class="about_icon_text">🥇Since 2010</p>
+    </div>
+    <div class="about_upper">
+        <img src="../visuals/gym_about.jpg" alt="" class="background">
+        <h3 class="context main">OUR STORY</h3>
+        <p class="context sub">ARCH GYM - network of premium-class gyms, founded in 2010.<br> We build a space where everyone can achieve their peak</p>
+    </div>
+
+    <div class="middle_about">
+
+        <div class="middle_cardholder">
+            <div class="middle_card">
+            <img src="../visuals/bolt.svg" alt="" class="middle_icon">
+            <p class="middle_card_title">Energy</p>
+            <p class="middle_card_description">We motivate our members and give them energy</p>
+            </div>
+            <div class="middle_card">
+            <img src="../visuals/shield-check.svg" alt="" class="middle_icon">
+            <p class="middle_card_title">Safety</p>
+            <p class="middle_card_description">Our standards ensure safe and comfort trainings.</p>
+            </div>
+            <div class="middle_card">
+            <img src="../visuals/users.svg" alt="" class="middle_icon">
+            <p class="middle_card_title">Community</p>
+            <p class="middle_card_description">15,000 active members already.</p>
+            </div>
+            <div class="middle_card">
+            <img src="../visuals/chart-line.svg" alt="" class="middle_icon">
+            <p class="middle_card_title">Result</p>
+            <p class="middle_card_description">Personal progress tracking.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_title">
+            <h3 class="footer_title_main">Start your journey <span class="footer_sub">now</span></h3>
+            <p class="footer_description">Get in contact with us</p>
+        </div>
+        <form action="submit" method="post" class="footer_form">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="mail@example.com">
+
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+44...">
+
+            <label for="message">Message</label>
+            <textarea id="message" class="footer_text" name="message" rows="4" placeholder="Your request..."></textarea>
+
+            <div class="plan-picker">
+                <label class="plan-opt">
+                  <input type="radio" name="plan" value="basic" checked>
+                  <span class="p-name">Basic</span>
+                  <span class="p-price">50$/month</span>
+                </label>
+
+                <label class="plan-opt">
+                  <input type="radio" name="plan" value="pro">
+                  <span class="p-name">Pro</span>
+                  <span class="p-price">100$/month</span>
+                </label>
+
+                <label class="plan-opt">
+                  <input type="radio" name="plan" value="ultra">
+                  <span class="p-name">Ultra</span>
+                  <span class="p-price">150$/month</span>
+                </label>
+            </div>
+
+            <button type="submit" class="footer_button">Send</button>
+        </form>
+    </footer>
+</body>

@@ -1,0 +1,207 @@
+.about_upper {
+    position: relative;
+    min-height: 800px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 35%);
+    mask-image: linear-gradient(to right, transparent 0%, black 35%);
+}
+
+.context {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 500px;
+    padding-left: 32px;
+}
+
+.context.main {
+    margin-right: 180px;
+    color: greenyellow;
+    text-shadow: 2px 4px 16px rgba(173, 255, 47, 0.6);
+    font-size: 120px;
+
+}
+
+.context.sub{
+    font-size: 32px;
+}
+
+.about_icon{
+    background-color: rgba(173, 255, 47, 0.6);
+    width: 130px;
+    margin: 32px 32px 0 32px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 16px rgba(173, 255, 47, 0.6);
+    text-align: center;
+}
+
+.about_icon_text{
+    color: greenyellow;
+
+}
+
+
+/* =========================================
+        Middle about page section
+========================================= */
+.middle_about{
+    background-color: #30302E80;
+    display: grid;
+    padding: 16px 0;
+}
+
+
+
+.middle_sub{
+    margin-left: 50px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.middle_icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.middle_cardholder{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    padding: 32px 64px;
+}
+
+.middle_card{
+    padding: 24px 32px;
+    background-color: #262624;
+    border-radius: 8px;
+    border: 2px solid #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform 0.3s ease;
+}
+
+.middle_card:hover{
+     transform: scale(1.05);
+     box-shadow: 2px 4px 16px rgba(173, 255, 47, 0.6);;
+}
+
+.middle_card_title{
+    color: white;
+    font-size: 32px;
+}
+
+.middle_card_description{
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* =========================================
+        Responsive media queries (About page)
+========================================= */
+
+@media (max-width: 1024px) {
+    .context.main {
+        font-size: 80px;
+        margin-right: 100px;
+    }
+
+    .context.sub {
+        font-size: 24px;
+    }
+
+    .background {
+        width: 50%;
+    }
+
+    .middle_cardholder {
+        padding: 32px;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about_upper {
+        min-height: 500px;
+        align-items: flex-start;
+        padding-top: 48px;
+    }
+
+    .context {
+        max-width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .context.main {
+        font-size: 56px;
+        margin-right: 0;
+    }
+
+    .context.sub {
+        font-size: 18px;
+        max-width: 420px;
+    }
+
+    .background {
+        width: 70%;
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, black 60%);
+        mask-image: linear-gradient(to right, transparent 0%, black 60%);
+        opacity: 0.4;
+    }
+
+    .about_icon {
+        margin: 24px;
+    }
+
+    .middle_cardholder {
+        grid-template-columns: 1fr;
+        padding: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .context.main {
+        font-size: 40px;
+    }
+
+    .context.sub {
+        font-size: 16px;
+    }
+
+    .about_upper {
+        min-height: 400px;
+    }
+
+    .background {
+        width: 100%;
+        opacity: 0.25;
+        -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 50%);
+        mask-image: linear-gradient(to bottom, transparent 0%, black 50%);
+    }
+
+    .middle_card {
+        padding: 20px;
+    }
+
+    .middle_card_title {
+        font-size: 24px;
+    }
+}

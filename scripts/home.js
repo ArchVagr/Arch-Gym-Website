@@ -72,6 +72,9 @@ const city_list = {
 };
 
 
+// ===============
+// AUTOMATIC SEARCH
+// ===============
 const search = document.getElementById("city_search");
 const menu = document.getElementById('search_menu');
 
@@ -99,3 +102,39 @@ if (search) {
         }
     });
 }
+
+
+// ===============
+// FORM VALIDATION
+// ===============
+const form = document.querySelector('.footer_form');
+
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const message = document.getElementById('message').value;
+    const plan = document.querySelector('input[name="plan"]:checked').value;
+
+    if (name === '') {
+        alert('Write your name!');
+        return;
+    }
+
+    if (email === '' || !email.includes('@')) {
+        alert('Fill in email field!');
+        return;
+    }
+
+    if (phone === '' || !/^\+?\d+$/.test(phone)) {
+        alert('Wrong number format!');
+        return;
+    }
+
+    console.log({ name, email, phone, message, plan });
+    alert('Form submitted!');
+    form.reset();
+});
