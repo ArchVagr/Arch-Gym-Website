@@ -80,7 +80,7 @@ const menu = document.getElementById('search_menu');
 
 if (search) {
     search.addEventListener("input", (e) => {
-        menu.innerHTML = ""; // очищаем меню перед новым поиском
+        menu.innerHTML = ""; 
         const query = e.target.value.toLowerCase();
         let matches=0
         for (const city of Object.keys(city_list)) {
